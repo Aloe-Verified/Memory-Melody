@@ -12,7 +12,7 @@ function Home() {
   const handleInputChange = (e) => {
     setInputValue(e.target.value);
   };
-
+  let f = [];
   const handleSubmit = (e) => {
     e.preventDefault();
     // Handle form submission logic with the input value
@@ -28,7 +28,7 @@ function Home() {
       }).then(function(data){
         const thing = JSON.parse(data);
         console.log(data);
-        let f = thing.datagood;
+        f = thing.datagood;
         console.log(f);
       });
     } catch (error) {throw error};
@@ -61,7 +61,9 @@ function Home() {
         <button type="submit" className="submit-button">Play Slideshow!</button>
       </form>
       <div>
-        <Slideshow/>
+        <Slideshow
+          lis={f}
+          />
       </div>
       <div>
         <SpotifyPlayer/>
