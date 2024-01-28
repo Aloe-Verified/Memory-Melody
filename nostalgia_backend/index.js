@@ -7,7 +7,8 @@ const SerpApi = require("google-search-results-nodejs");
 var cors = require('cors');
 require('dotenv').config()
 const search = new SerpApi.GoogleSearch(process.env.API_KEY);
-app.use(cors())
+app.use(cors());
+app.use(express.json());
 const {OpenAI} = require("openai");
 
 
@@ -45,15 +46,16 @@ const getResults = async (searchq) => {
     return imagesResults;
 };
 app.post("/api", async (req, res) => {
-    let parsing = req.data;
-    parsing = parsing.split(",");
+  console.log(req.body);
+    const { data } = req.body;
+    let parsing = data.split(",");
+    let send = []
     for (let z = 0; z < parsing.length; z++) {
         input = 'give 5 nostalgic events of' + parsing[z] + 'without descriptions';
         let data = await gpt(input);
         data = data.split(/\n[0-9]\.[ ]?/);
         data = data.slice(1);
         for (let i = 0; i < data.length; i++) {
-            let send = []
             // let imageslink = "https://www.google.com/search?q=" + data[i] + "&gl=us&tbm=isch&sourceid=chrome&ie=UTF-8";
             // axios(imageslink)
             //     .then(res => {
@@ -73,17 +75,17 @@ app.post("/api", async (req, res) => {
                     send.push(result[j].original)
                 }
             })
-            res.send(send);
         }
-        // res.json({"data": data});
     }
+    res.json(JSON.stringify({ datagood : send }));
+    //res.send(send);
 })
 
 async function gpt(text) {
   const completion = await openai.completions.create({
     model: "gpt-3.5-turbo-instruct",
     prompt: text,
-    max_tokens: 15,
+    max_tokens: 500,
     temperature: 0,
   });
 

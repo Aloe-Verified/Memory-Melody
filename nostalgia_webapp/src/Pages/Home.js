@@ -14,11 +14,27 @@ function Home() {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Handle form submission logic with the input value
-    axios.post('http://localhost:4000/api', { data: inputValue}).then(response => {
-      console.log(response.data);
-    }).catch(error => {
-      console.error('Error:',error);
-    });
+    try {
+      fetch("/api", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ data: inputValue }),
+      }).then((res) => {
+        return res.json()
+      }).then(function(data){
+        const thing = JSON.parse(data);
+        console.log(data);
+        let f = thing.datagood;
+        console.log(f);
+      });
+    } catch (error) {throw error};
+    // axios.post('/api', JSON.stringify({ data: inputValue })).then(response => {
+    //   console.log(response.data);
+    // }).catch(error => {
+    //   console.error('Error:',error);
+    // });
     console.log('Submitted value:', inputValue);
   };
 
