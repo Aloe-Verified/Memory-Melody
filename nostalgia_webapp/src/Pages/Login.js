@@ -11,7 +11,7 @@ function Login() {
           <div className="banner">
               <div className="banner-content">
                   <h2>Memory <span>Melody</span></h2>
-                  <p>Embark on a delightful journey as you seamlessly explore cherished images intertwined with the familiar melodies that resonate with your memories!</p>
+                  <p>Embark on a delightful journey as you explore familiar images mixed with the comforting melodies that resonate with your memories. To begin, just click the login button in the top right!</p>
               </div>
               <div className="banner-img">
                 <img src={img} alt="Logo picture"></img>

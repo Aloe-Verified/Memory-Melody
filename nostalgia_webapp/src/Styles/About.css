@@ -1,9 +1,9 @@
+
 .about {
     width: 100%;
     height: 90vh;
     display: flex;
     flex-direction: column;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   }
   
   .aboutTop {
@@ -13,6 +13,7 @@
     background-position: 0px -274px;
     background-repeat: no-repeat;
     background-size: cover; 
+    font-family: 'Lexend', sans-serif;
   }
   
   .aboutBottom {
@@ -25,6 +26,7 @@
   .aboutBottom p {
     width: 1200px;
     text-indent: 50px;
+    font-family: 'Lexend', sans-serif;
   }
   
   .about .aboutBottom h1 {

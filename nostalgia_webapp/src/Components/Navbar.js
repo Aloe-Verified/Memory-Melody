@@ -14,7 +14,11 @@ function Navbar () {
         <h1>Memory Melody: &nbsp; Tune in to Memories</h1>
       </div>
       <div className="rightSide"> 
-        <Link to="/">Login</Link>
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
+        <div className="loginButton">
+          <Link to="/">Login</Link>
+        </div>
       </div>
 
     </div>
