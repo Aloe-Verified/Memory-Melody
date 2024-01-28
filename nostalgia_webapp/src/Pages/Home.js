@@ -4,6 +4,7 @@ import background from "../Assets/HomeBackground.jpg";
 import { useState } from 'react';
 import axios from 'axios';
 import Slideshow from '../Components/Slideshow.js';
+import SpotifyPlayer from "../function.js";
 
 function Home() {
   const [inputValue, setInputValue] = useState('');
@@ -27,11 +28,13 @@ function Home() {
 
   return (
     <div className="home" style={{ backgroundImage: `url(${background})` }}>
-
+      <div>
+        <h4>Input words to produce sentimental images surrounding those words. To have a customized playlist play in the background, scroll down!</h4>
+      </div>
 
       <form onSubmit={handleSubmit} className="formField">
         <label>
-          Enter five words separated by commas: &nbsp;
+          Enter two words separated by commas: &nbsp;
           <input
             type="text"
             value={inputValue}
@@ -41,8 +44,15 @@ function Home() {
         </label>
         <button type="submit" className="submit-button">Play Slideshow!</button>
       </form>
-      <Slideshow/>
+      <div>
+        <Slideshow/>
+      </div>
+      <div>
+        <SpotifyPlayer/>
+      </div>
     </div>
+
+  
   )
 }
 
