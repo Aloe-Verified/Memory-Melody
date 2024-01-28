@@ -4,9 +4,10 @@ const app = express()
 const cheerio = require("cheerio");
 const axios = require("axios");
 const SerpApi = require("google-search-results-nodejs");
+var cors = require('cors');
 require('dotenv').config()
 const search = new SerpApi.GoogleSearch(process.env.API_KEY);
-
+app.use(cors())
 const {OpenAI} = require("openai");
 
 
