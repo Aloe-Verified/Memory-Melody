@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap');
+
+.about {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .aboutTop {
+    width: 100%;
+    height: 55%;
+    background-position: center;
+    background-position: 0px -274px;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    font-family: 'Lexend', sans-serif;
+  }
+  
+  .aboutBottom {
+    display: flex;
+    flex-direction: column;
+    height: 45%; 
+    align-items: center;
+  }
+  
+  .aboutBottom p {
+    width: 1200px;
+    font-family: 'Lexend', sans-serif;
+  }
+  
+  .about .aboutBottom h1 {
+    font-weight: 700;
+    font-size: 40px;
+    color: black;
+    height: 30px;
+    display: flex; 
+  }
+  

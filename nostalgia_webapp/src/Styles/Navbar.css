@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap');
+
+.navbar {
+  width: 100%;
+  height: 10vh;
+  background-color: #21232b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.navbar .leftSide {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 100px;
+}
+
+.navbar .leftSide img {
+  height: 8vh; /* Adjust the height to your preference */
+}
+
+.navbar .middle {
+  flex: 2; /* Adjust the flex value to your preference */
+  display: flex;
+  justify-content: center;
+}
+
+.navbar .middle h1 {
+  color: white;
+  margin: 0;
+}
+
+.navbar .rightSide {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 50px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px; /* Adjust the margin to your preference */
+}
+
+.navbar a:hover {
+  color: #ffffff;
+  border-color: #ffffff;
+  text-decoration:underline;
+}
+
+.navbar .rightSide .loginButton a{
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px; /* Adjust the padding to your preference */
+  border: 1px solid white; /* Add a border to the button */
+  border-radius: 5px; /* Add border-radius for rounded corners */
+  transition: background-color 0.3s, color 0.3s; /* Add transition for smooth hover effect */
+}
+
+.navbar .rightSide .loginButton a:hover {
+  background-color: #ffffff;
+  color: #21232b; /* Change text color on hover */
+}
+
+@media only screen and (max-width: 900px) {
+  .navbar .rightSide a {
+    width: auto;
+  }
+
+  .navbar .leftSide {
+    padding-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar .rightSide a {
+    display: none;
+  }
+
+  .navbar .rightSide {
+    justify-content: flex-end;
+    padding-right: 10px;
+  }
+}
+
+.tagline {
+  font-size: 20px;
+  vertical-align: middle;
+  font-style: italic;
+  color: #ffbd36;
+}
