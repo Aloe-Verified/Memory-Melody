@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap');
+/* *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior: smooth;
+} */
+
+/* a{
+    text-decoration:none;
+    color:#fff;
+    transition: 0.3s;
+}
+
+ul{
+    list-style:none;
+}
+
+img{
+    max-width:100%;
+} */
+
+/* body{
+    font-family: 'Lexend', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: #202020;
+} */
+
+ .container{
+    width: 1170px;
+    margin:auto;
+} 
+
+/* banner */
+.banner-area{
+    padding:80px 0px;
+    background-position: center;
+    background-size:cover;
+    height:68vh;
+}
+
+.banner{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    color:#fff; 
+}
+
+.banner-content h5{
+    font-size: 22px;
+    font-weight:700px;
+}
+
+.banner-content h2{
+    font-size:50px;
+    line-height:80px;
+    text-transform: uppercase;
+}
+
+.banner-content h2 span{
+    color:#ffbd36;
+}
+
+.banner-content p{
+    max-width: 600px;
+    margin:20px 0px;
+}
+
+.btn{
+    display:inline-block;
+    background-color: #ffbd36;
+    border-radius:3px;
+    border: 1px solid transparent;
+    padding: 10px 20px;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size:18px;
+}
+
+.btn:hover{
+    background-color:#333;
+    border-color:#ffbd36;
+    color:#ffbd36;
+}
+
+.banner-img img{
+    background-color: #ffbd36;
+    padding:20px;
+    border-radius: 50%;
+}

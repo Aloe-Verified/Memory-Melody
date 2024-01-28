@@ -10,6 +10,9 @@ function Navbar () {
       <div className="leftSide">
         <img src={logo} />
       </div>
+      <div className="middle">
+        <h1>Memory Melody: &nbsp; Tune in to Memories</h1>
+      </div>
       <div className="rightSide"> 
         <Link to="/">Login</Link>
       </div>
