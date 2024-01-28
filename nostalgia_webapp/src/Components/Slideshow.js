@@ -2,7 +2,7 @@ import "../Styles/Slideshow.css";
 
 function Slideshow({ lis=[] }) {
     var slides = document.getElementsByClassName("slide");
-
+    console.log(lis);
     var newImageSources = lis;
     
     for (var i = 0; i < slides.length; i++) {
@@ -16,152 +16,155 @@ function Slideshow({ lis=[] }) {
         <div className="slider">
             <div className="slide-track">
                 <div className="slide-track">
-                    <div className="slide">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"></img>
+                <div className="slide">
+                        <img src=""></img>
                     </div>
                     <div className="slide">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"></img>
+                        <img src=""></img>
                     </div>
                     <div className="slide">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"></img>
+                        <img src=""></img>
                     </div>
                     <div className="slide">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"></img>
+                        <img src=""></img>
                     </div>
                     <div className="slide">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"></img>
+                        <img src=""></img>
                     </div>
                     <div className="slide">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"></img>
+                        <img src=""></img>
                     </div>
                     <div className="slide">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"></img>
+                        <img src=""></img>
                     </div>
                     <div className="slide">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"></img>
+                        <img src=""></img>
                     </div>
                     <div className="slide">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"></img>
+                        <img src=""></img>
                     </div>
                     <div className="slide">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"></img>
+                        <img src=""></img>
                     </div>
                     <div className="slide">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"></img>
+                        <img src=""></img>
                     </div>
                     <div className="slide">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"></img>
+                        <img src=""></img>
                     </div>
                     <div className="slide">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"></img>
+                        <img src=""></img>
                     </div>
                     <div className="slide">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"></img>
+                        <img src=""></img>
                     </div>
                     <div className="slide">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"></img>
+                        <img src=""></img>
                     </div>
                     <div className="slide">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"></img>
+                        <img src=""></img>
                     </div>
                     <div className="slide">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"></img>
+                        <img src=""></img>
                     </div>
                     <div className="slide">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"></img>
+                        <img src=""></img>
                     </div>
                     <div className="slide">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"></img>
+                        <img src=""></img>
                     </div>
                     <div className="slide">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"></img>
+                        <img src=""></img>
                     </div>
                     <div className="slide">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"></img>
+                        <img src=""></img>
                     </div>
                     <div className="slide">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"></img>
+                        <img src=""></img>
                     </div>
                     <div className="slide">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"></img>
+                        <img src=""></img>
                     </div>
                     <div className="slide">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"></img>
+                        <img src=""></img>
                     </div>
                     <div className="slide">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"></img>
+                        <img src=""></img>
                     </div>
                     <div className="slide">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"></img>
+                        <img src=""></img>
                     </div>
                     <div className="slide">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"></img>
+                        <img src=""></img>
                     </div>
                     <div className="slide">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"></img>
+                        <img src=""></img>
                     </div>
                     <div className="slide">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"></img>
+                        <img src=""></img>
                     </div>
                     <div className="slide">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"></img>
+                        <img src=""></img>
                     </div>
                     <div className="slide">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"></img>
+                        <img src=""></img>
                     </div>
                     <div className="slide">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"></img>
+                        <img src=""></img>
                     </div>
                     <div className="slide">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"></img>
+                        <img src=""></img>
                     </div>
                     <div className="slide">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"></img>
+                        <img src=""></img>
                     </div>
                     <div className="slide">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"></img>
+                        <img src=""></img>
                     </div>
                     <div className="slide">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"></img>
+                        <img src=""></img>
                     </div>
                     <div className="slide">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"></img>
+                        <img src=""></img>
                     </div>
                     <div className="slide">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"></img>
+                        <img src=""></img>
                     </div>
                     <div className="slide">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"></img>
+                        <img src=""></img>
                     </div>
                     <div className="slide">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"></img>
+                        <img src=""></img>
                     </div>
                     <div className="slide">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"></img>
+                        <img src=""></img>
                     </div>
                     <div className="slide">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"></img>
+                        <img src=""></img>
                     </div>
                     <div className="slide">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"></img>
+                        <img src=""></img>
                     </div>
                     <div className="slide">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"></img>
+                        <img src=""></img>
                     </div>
                     <div className="slide">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"></img>
+                        <img src=""></img>
                     </div>
                     <div className="slide">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"></img>
+                        <img src=""></img>
                     </div>
                     <div className="slide">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"></img>
+                        <img src=""></img>
                     </div>
                     <div className="slide">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"></img>
+                        <img src=""></img>
                     </div>
                     <div className="slide">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"></img>
+                        <img src=""></img>
+                    </div>
+                    <div className="slide">
+                        <img src=""></img>
                     </div>
                 </div>
             </div>
