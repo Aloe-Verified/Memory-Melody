@@ -4,13 +4,14 @@ const app = express()
 const cheerio = require("cheerio");
 const axios = require("axios");
 const SerpApi = require("google-search-results-nodejs");
-const search = new SerpApi.GoogleSearch("8605e5d253ebaa653d5c0de961af9dc5b88593c5ac08ce6b1cf73ee2a93f66d9");
+require('dotenv').config()
+const search = new SerpApi.GoogleSearch(process.env.API_KEY);
 
 const {OpenAI} = require("openai");
 
 
 const openai = new OpenAI({
-    apiKey: "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"
+    apiKey: process.env.OPENAI_API_KEY
 });
 
 
