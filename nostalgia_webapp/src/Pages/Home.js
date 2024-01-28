@@ -3,6 +3,7 @@ import "../Styles/Home.css";
 import background from "../Assets/HomeBackground.jpg";
 import { useState } from 'react';
 import axios from 'axios';
+import Slideshow from '../Components/Slideshow.js';
 
 function Home() {
   const [inputValue, setInputValue] = useState('');
@@ -40,6 +41,7 @@ function Home() {
         </label>
         <button type="submit" className="submit-button">Play Slideshow!</button>
       </form>
+      <Slideshow/>
     </div>
   )
 }
