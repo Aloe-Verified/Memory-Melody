@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import logo from "../Assets/MMLogo.png";
 import "../Styles/Navbar.css";
+import LoginButton from "./LoginButton.js";
+import LogoutButton from "./Logout.js";
 
 function Navbar () {
   return (
@@ -16,9 +18,8 @@ function Navbar () {
       <div className="rightSide"> 
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>
-        <div className="loginButton">
-          <Link to="/">Login</Link>
-        </div>
+        <LoginButton/>
+        <LogoutButton/>   
       </div>
 
     </div>
