@@ -23,6 +23,8 @@ function Home() {
     console.log('Submitted value:', inputValue);
   };
 
+
+
   return (
     <div className="home" style={{ backgroundImage: `url(${background})` }}>
 
