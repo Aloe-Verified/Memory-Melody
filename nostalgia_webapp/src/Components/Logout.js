@@ -9,12 +9,13 @@ const LogoutButton = () => {
         isAuthenticated && (
             <div className='welcome'>
                 <div className='profile'>
-                    <Link to="/home">Maker</Link>
-                    {/* <h1>Welcome <span>{user.name}</span></h1>
-                    {user.picture && <img src={user.picture} alt={user.name}/>} */}
-                    <button onClick={() => logout()}>
-                        Log Out
-                    </button>
+                    <Link to="/home">Composer</Link>
+                    <div className="profile">
+                        {user.picture && <img src={user.picture} alt={user.name}/>}
+                        <button onClick={() => logout()}>
+                            Log Out
+                        </button>
+                    </div>
                 </div>
             </div>
         )

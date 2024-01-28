@@ -13,7 +13,7 @@ function Navbar () {
         <img src={logo} />
       </div>
       <div className="middle">
-        <h1>Memory Melody: &nbsp; Tune in to Memories</h1>
+        <h1>Memory Melody: <span class="tagline">Tune in to Memories</span></h1>
       </div>
       <div className="rightSide"> 
         <Link to="/">Home</Link>
