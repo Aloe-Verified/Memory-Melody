@@ -45,33 +45,38 @@ const getResults = async (searchq) => {
     return imagesResults;
 };
 app.post("/api", async (req, res) => {
-    let data = await gpt('give 5 nostalgic events of messi without descriptions');
-    data = data.split(/\n[0-9]\.[ ]?/);
-    data = data.slice(1);
-    for (let i = 0; i < data.length; i++) {
-        let send = []
-        // let imageslink = "https://www.google.com/search?q=" + data[i] + "&gl=us&tbm=isch&sourceid=chrome&ie=UTF-8";
-        // axios(imageslink)
-        //     .then(res => {
-        //         const htmlData = res.data;
-        //         console.log(htmlData)
-        //         const $ = cheerio.load(htmlData);
-        //         const images = []
+    let parsing = req.data;
+    parsing = parsing.split(",");
+    for (let z = 0; z < parsing.length; z++) {
+        input = 'give 5 nostalgic events of' + parsing[z] + 'without descriptions';
+        let data = await gpt(input);
+        data = data.split(/\n[0-9]\.[ ]?/);
+        data = data.slice(1);
+        for (let i = 0; i < data.length; i++) {
+            let send = []
+            // let imageslink = "https://www.google.com/search?q=" + data[i] + "&gl=us&tbm=isch&sourceid=chrome&ie=UTF-8";
+            // axios(imageslink)
+            //     .then(res => {
+            //         const htmlData = res.data;
+            //         console.log(htmlData)
+            //         const $ = cheerio.load(htmlData);
+            //         const images = []
 
-        //         $('.kCmkOe', htmlData).each((index, element) => {
-        //             const image = $(element).children('.DS1iW').attr('src')
-        //             images.push({image})
-        //         })
-        //         console.log(images)
-        //     }).catch(err => console.error(err))
-        await getResults(data[i]).then((result) => {
-            for (let j = 0; j < 5; j++) {
-                send.push(result[j].original)
-            }
-        })
-        res.send(send);
+            //         $('.kCmkOe', htmlData).each((index, element) => {
+            //             const image = $(element).children('.DS1iW').attr('src')
+            //             images.push({image})
+            //         })
+            //         console.log(images)
+            //     }).catch(err => console.error(err))
+            await getResults(data[i]).then((result) => {
+                for (let j = 0; j < 5; j++) {
+                    send.push(result[j].original)
+                }
+            })
+            res.send(send);
+        }
+        // res.json({"data": data});
     }
-    // res.json({"data": data});
 })
 
 async function gpt(text) {
