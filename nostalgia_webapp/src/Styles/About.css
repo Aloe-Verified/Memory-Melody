@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap');
 
 .about {
     width: 100%;
@@ -25,13 +26,12 @@
   
   .aboutBottom p {
     width: 1200px;
-    text-indent: 50px;
     font-family: 'Lexend', sans-serif;
   }
   
   .about .aboutBottom h1 {
-    font-weight: 400;
-    font-size: 60px;
+    font-weight: 700;
+    font-size: 40px;
     color: black;
     height: 30px;
     display: flex; 
