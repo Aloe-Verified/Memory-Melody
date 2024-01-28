@@ -5,14 +5,13 @@ import { useState } from 'react';
 import axios from 'axios';
 import Slideshow from '../Components/Slideshow.js';
 import SpotifyPlayer from "../function.js";
-
+let f = [];
 function Home() {
   const [inputValue, setInputValue] = useState('');
 
   const handleInputChange = (e) => {
     setInputValue(e.target.value);
   };
-  let f = [];
   const handleSubmit = (e) => {
     e.preventDefault();
     // Handle form submission logic with the input value
