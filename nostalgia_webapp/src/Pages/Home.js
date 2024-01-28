@@ -1,12 +1,15 @@
 import React from 'react'
 import "../Styles/Home.css";
-import LoginButton from "../Components/LoginButton";
-import LogoutButton from "../Components/Logout.js";
+import background from "../Assets/HomeBackground.jpg";
 
 function Home() {
   return (
-    <div>
-    </div>  
+    <div className="home">
+      <div className="homeTop" style={{ backgroundImage: `url(${background})` }}> 
+      
+      </div>
+      
+    </div>
   )
 }
 
